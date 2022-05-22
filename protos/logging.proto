@@ -1,7 +1,5 @@
 syntax = "proto3";
 
-import "google/protobuf/any.proto";
-
 package logging;
 
 message LogRecord {
@@ -18,6 +16,9 @@ message LogRecord {
   }
 
   Serialisation serialisation = 5;
-  
-  google.protobuf.Any message = 6;
+
+  // NOTE: Nominally, we could use a 'google.protobuf.Any' for the embedded message, but
+  //       this won't work for non-protobuf messages (e.g. FASTCDR message). Using the
+  //       'bytes' type here allows for any serializable message type.
+  bytes message = 6;
 }
