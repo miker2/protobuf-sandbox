@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package geometry;
+
+message Vector3d {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+}
+
+message Quaterniond {
+    double x = 1;
+    double y = 2;
+    double z = 3;
+    double w = 4;
+}
+
+message Pose {
+    Vector3d position = 1;
+    Quaterniond orientation = 2;
+}
+
+message Twist {
+    Vector3d linear = 1;
+    Vector3d angular = 2;
+}

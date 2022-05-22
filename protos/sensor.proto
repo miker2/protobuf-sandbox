@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "geometry.proto";
+
+package sensor;
+
+message IMU {
+  geometry.Vector3d accelerometer = 1;
+  geometry.Vector3d gyro = 2;
+  optional geometry.Vector3d magnetometer = 3;
+  optional geometry.Quaterniond orientation = 4;
+}
+
+message Joint {
+  double q = 1;             // Position
+  double dq = 2;            // Velocity
+  optional double ddq = 3;  // Acceleration
+}
+
+message RobotState {
+  geometry.Pose pose = 1;
+  IMU imu = 2;
+  
+  repeated Joint joint = 3;
+}
+
+message RobotCommand {
+  repeated Joint joint_d = 1;
+}

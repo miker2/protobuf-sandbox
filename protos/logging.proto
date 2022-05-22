@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+
+package logging;
+
+message LogRecord {
+  double timestamp = 1;
+  uint64 sequence_id = 2;
+
+  string message_type = 3;
+  optional string topic = 4;
+
+  enum Serialisation {
+    FASTCDR = 0;
+    PROTOBUF = 1;
+    JSON = 2;
+  }
+
+  Serialisation serialisation = 5;
+  
+  google.protobuf.Any message = 6;
+}
