@@ -1,8 +1,8 @@
 # protobuf-sandbox
 A sandbox for playing around with various ideas related to protobuf
 
-This project depends on the (`protobuf`)[https://developers.google.com/protocol-buffers] library.
-Instructions for installation can be found (here)[https://github.com/protocolbuffers/protobuf].
+This project depends on the [`protobuf`](https://developers.google.com/protocol-buffers) library.
+Instructions for installation can be found [here](https://github.com/protocolbuffers/protobuf).
 You'll also need the `protobuf` python package.
 
 ## Generating protos
