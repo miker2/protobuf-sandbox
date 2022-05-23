@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rlogging.proto\x12\x07logging\"\xe7\x01\n\tLogRecord\x12\x11\n\ttimestamp\x18\x01 \x01(\x01\x12\x13\n\x0bsequence_id\x18\x02 \x01(\x04\x12\x14\n\x0cmessage_type\x18\x03 \x01(\t\x12\x12\n\x05topic\x18\x04 \x01(\tH\x00\x88\x01\x01\x12\x37\n\rserialisation\x18\x05 \x01(\x0e\x32 .logging.LogRecord.Serialisation\x12\x0f\n\x07message\x18\x06 \x01(\x0c\"4\n\rSerialisation\x12\x0b\n\x07\x46\x41STCDR\x10\x00\x12\x0c\n\x08PROTOBUF\x10\x01\x12\x08\n\x04JSON\x10\x02\x42\x08\n\x06_topicb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rlogging.proto\x12\x07logging\"\xe7\x01\n\tLogRecord\x12\x11\n\ttimestamp\x18\x01 \x01(\x01\x12\x13\n\x0bsequence_id\x18\x02 \x01(\x04\x12\x14\n\x0cmessage_type\x18\x03 \x01(\t\x12\x12\n\x05topic\x18\x04 \x01(\tH\x00\x88\x01\x01\x12\x37\n\rserialisation\x18\x05 \x01(\x0e\x32 .logging.LogRecord.Serialisation\x12\x0f\n\x07message\x18\x06 \x01(\x0c\"4\n\rSerialisation\x12\x0b\n\x07\x46\x41STCDR\x10\x00\x12\x0c\n\x08PROTOBUF\x10\x01\x12\x08\n\x04JSON\x10\x02\x42\x08\n\x06_topic\"\xee\x01\n\nLogRecord2\x12\x11\n\ttimestamp\x18\x01 \x01(\x01\x12\x13\n\x0bsequence_id\x18\x02 \x01(\x04\x12\x14\n\x0cmessage_type\x18\x03 \x01(\t\x12\x12\n\x05topic\x18\x04 \x01(\tH\x00\x88\x01\x01\x12\x38\n\rserialisation\x18\x05 \x01(\x0e\x32!.logging.LogRecord2.Serialisation\x12\x14\n\x0cmessage_size\x18\x06 \x01(\r\"4\n\rSerialisation\x12\x0b\n\x07\x46\x41STCDR\x10\x00\x12\x0c\n\x08PROTOBUF\x10\x01\x12\x08\n\x04JSON\x10\x02\x42\x08\n\x06_topicb\x06proto3')
 
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, globals())
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'logging_pb2', globals())
@@ -24,4 +24,8 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _LOGRECORD._serialized_end=258
   _LOGRECORD_SERIALISATION._serialized_start=196
   _LOGRECORD_SERIALISATION._serialized_end=248
+  _LOGRECORD2._serialized_start=261
+  _LOGRECORD2._serialized_end=499
+  _LOGRECORD2_SERIALISATION._serialized_start=196
+  _LOGRECORD2_SERIALISATION._serialized_end=248
 # @@protoc_insertion_point(module_scope)

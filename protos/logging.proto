@@ -22,3 +22,21 @@ message LogRecord {
   //       'bytes' type here allows for any serializable message type.
   bytes message = 6;
 }
+
+message LogRecord2 {
+  double timestamp = 1;
+  uint64 sequence_id = 2;
+
+  string message_type = 3;
+  optional string topic = 4;
+
+  enum Serialisation {
+    FASTCDR = 0;
+    PROTOBUF = 1;
+    JSON = 2;
+  }
+
+  Serialisation serialisation = 5;
+
+  uint32 message_size = 6;
+}
